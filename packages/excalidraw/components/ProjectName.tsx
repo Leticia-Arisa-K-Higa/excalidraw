@@ -49,9 +49,11 @@ export const ProjectName = (props: Props) => {
         onBlur={handleBlur}
         onKeyDown={handleKeyDown}
         id={`${id}-filename`}
+        data-testid="projectname-input"
         value={fileName}
         onChange={(event) => setFileName(event.target.value)}
       />
+
     </div>
   );
 };
